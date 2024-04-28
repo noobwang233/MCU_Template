@@ -1,0 +1,189 @@
+{
+  "name": "GD32F303RCT6",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "User"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../GD32F30x_Firmware_Library/CMSIS/GD/GD32F30x/Source/ARM/startup_gd32f30x_hd.s"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/CMSIS/GD/GD32F30x/Source/system_gd32f30x.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Lib",
+        "files": [
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_adc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_bkp.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_can.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_crc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_ctc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_dac.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_dbg.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_dma.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_enet.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_exmc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_exti.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_fmc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_fwdgt.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_gpio.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_i2c.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_misc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_pmu.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_rcu.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_rtc.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_sdio.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_spi.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_timer.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_usart.c"
+          },
+          {
+            "path": "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Source/gd32f30x_wwdgt.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "GD32F303RC",
+  "packDir": ".pack/GigaDevice/GD32F30x_DFP.2.2.3",
+  "miscInfo": {
+    "uid": "6b6a0cc0a57a698f6986c6aac3f9e02d"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        "User/gd32f303r_start.c"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0xC000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x40000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32f3x",
+        "interface": "cmsis-dap",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "../GD32F30x_Firmware_Library/CMSIS",
+          "../GD32F30x_Firmware_Library/CMSIS/GD/GD32F30x/Include",
+          "../GD32F30x_Firmware_Library/GD32F30x_standard_peripheral/Include",
+          "User"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "GD32F30X_HD",
+          "USE_STDPERIPH_DRIVER"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
